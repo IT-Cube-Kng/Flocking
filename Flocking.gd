@@ -20,7 +20,7 @@ export(float, 1, 10) var mass = 1 #boid mass, important for wind/gravity
 
 #These variables determine how forces are weighted against each other. 0 turns a force off
 export(float, 0, 1) var master_factor = 1 #handles intensity of all forces except friction
-export(float, -1, 1) var seek_factor = 0 #desire to seek the target
+export(float, -1, 1) var seek_factor = 1 #desire to seek the target
 export(float, 0, 1) var separation_factor = 0.5 #desire to gain distance to other boids
 export(float, 0, 1) var alignment_factor = 0.5 #desire to align movement with other boids
 export(float, 0, 1) var cohesion_factor = 0.5 #desire to find average position of other boids
